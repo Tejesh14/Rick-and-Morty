@@ -1,0 +1,86 @@
+:root{
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --gray-color: #f3f3f3;
+}
+
+.App{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  min-height: 90.1vh;
+}
+
+header{
+  text-align: center;
+}
+
+.splitter{
+  display: flex;
+}
+
+.left{
+  width: 85%;
+  margin: 10px;
+  text-align: left;
+}
+
+.right{
+  width: 25%;
+  border: 1px solid var(--primary-color);
+}
+
+.details-table{
+  padding: 0px 10px;
+  display: flex;
+  background-color: var(--gray-color);
+  border-top: 1px solid var(--primary-color);
+}
+
+.heading{
+  font-weight: bold;
+  width: 50%;
+  text-align: left;
+}
+
+.inc-size{
+  font-size: 1.3rem;
+}
+
+.detail{
+  text-align: left;
+  width: 100%;
+}
+
+.links{
+  color: var(--primary-color);
+}
+
+.name{
+  background-color: var(--gray-color);
+  padding: 5px 0px;
+  border-top: 1px solid var(--primary-color);
+}
+
+.footer-div{
+  margin-top: auto;
+}
+
+.footer-text{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 786px) {
+  .splitter{
+    flex-direction: column;
+    margin: 10px auto;
+  }
+  .right{
+    width: 100%;
+  }
+}
